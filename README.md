@@ -22,11 +22,16 @@ planning software, as input.
 * Texture and Canopy Height Model calculation (use process-imagery.R)
   + Process orthomosaic bands to obtain first-order-occurrence measures for textural analysis
   + Caculate vegetation height (CHM)
-* Image classification process (QGIS or similar and classify-imagery.R)
-  + Clip orthomosaic raster to polygon to eliminate edge effects and no-data cells
-  + Resample all rasters to the clipped basline raster
-  + Clip resampled rasters to the clipped baseline raster
-    ++ test
+* Image classification process (QGIS or similar)
+  +Prep raster data 
+    - Clip orthomosaic raster to polygon to eliminate edge effects and no-data cells
+    - Resample all rasters to the clipped basline raster
+    - Clip resampled rasters to the clipped baseline raster
+  +Prep Training and Validation data
+    - Training data: photo-interpret patches of pure vegetation, assign unique class codes, generate random sample points
+    _ Validation data: assign uniqie class codes to GCPs, generate random sample points
+    _ Join random sample points to their polygons/GCPs and then extract values for all input raster varibles to random sample points; there should be a column for all response and explanotory variables in the resulting attribute tables
+* Random Forest Classification (classify-imagery.R)
   
 
 # Pre-processing imagery to obtain orthomosaics, DTM, and DSM
