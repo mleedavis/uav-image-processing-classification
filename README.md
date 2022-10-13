@@ -12,4 +12,4 @@ planning software, as input.
 * [Pre-processing imagery to obtain orthomosaics, DTM, and DSM rasters](https://github.com/mleedavis/uav-image-processing-classification)
 
 
-#Pre-processing imagery to obtain orthomosaics, DTM, and DSM
+# Pre-processing imagery to obtain orthomosaics, DTM, and DSM
