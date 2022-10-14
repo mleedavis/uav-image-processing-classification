@@ -16,7 +16,7 @@ planning software, as input.
 # Data aquisitions and processing steps
 
 * Collect field data
-  + Collect UAV imagery and field data including ground control points (GCPs) and vegetation data within at the species/functional group level of interest
+  + Collect UAV imagery and field data including ground control points (GCPs) and vegetation data within at the species/functional group level of interest: see documents folder for details and basic overview
 * Process imagery
   + Process photos and GCPs in 3rd party software to obtain orthomosaics, DTM and DSMs
 * Texture and Canopy Height Model calculation (use process-imagery.R)
@@ -35,3 +35,9 @@ planning software, as input.
   
 
 # Pre-processing imagery to obtain orthomosaics, DTM, and DSM
+Pre-processing imagery to orthorectify imagery, produce final orthomosaics, incorporate ground control points, and produce digital terrain and digital surface models can be carried out in a variety of proprietary and open source softwares. An example image should look something like this: 
+
+
+![caption.](images/OS_GreenBand2.png)
+
+
