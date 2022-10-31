@@ -47,7 +47,7 @@ Neighborhood variance, entroy and skewness are computed here. Neighborhood (wind
 
 This example raster is a zoomed in view of a smaller area from our image above
 
-![](images/OS_GreenBand2_zoom.png)
+![](images/OS_GreenBand2_clipGit.tif)
 
 
 
