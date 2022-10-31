@@ -35,15 +35,17 @@ planning software, as input.
   
 
 # Pre-processing Imagery to Obtain Orthomosaics, DTM, and DSM
-Pre-processing imagery to orthorectify imagery, produce final orthomosaics, incorporate ground control points, and produce digital terrain and digital surface models can be carried out in a variety of proprietary and open source softwares. An example image should look something like this: 
+Pre-processing imagery to orthorectify imagery, produce final orthomosaics, incorporate ground control points, and produce digital terrain and digital surface models can be carried out in a variety of proprietary and open source softwares. An example image should look something like this green band which has been extracted from a final mosaic (for ease of display the green band is rendered with a blan to white stretch here...) : 
 
 
 ![](images/OS_GreenBand2.png)
 
 # Texture Analysis and Canopy Height Model Calculation
-This step can be done in a variety of paid models, but here we are going to carry out texture analysis and canopy height model calculations in R for a reproducable (and free) workflow. This step can be very slow for larger extents  (modification to loop through parrelell process on the to-do list).
+Texture analysis is used to generate additional predictor variables beyond red-blue-green values obtained from image pixels.  Texture analysis defines a new pixel value based on neighboring rgb values. Neighborhoods with similar values (bare ground for instance) will result in 'smoother' textures than neighborhoods with dissimilar values (shrubs, trees, or other 'rougher' surfaces). This step can be very slow for larger extents  (modification to loop through parrelell process on the to-do list). 
 
-This example raster is a zoomed in view of a single shrub from our image above
+Neighborhood variance, entroy and skewness are computed here. Neighborhood (window) size should be set based on the number of pixels that covers objects of interest. 
+
+This example raster is a zoomed in view of a smaller area from our image above
 
 ![](images/OS_GreenBand2_zoom.png)
 
