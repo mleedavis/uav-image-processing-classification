@@ -19,7 +19,7 @@ planning software, as input.
   + Collect UAV imagery and field data including ground control points (GCPs) and vegetation data within at the species/functional group level of interest: see documents folder for details and basic overview
 * Process imagery
   + Process photos and GCPs in 3rd party software to obtain orthomosaics, DTM and DSMs
-* Texture and Canopy Height Model calculation (use process-imagery.R)
+* Texture Analysis and Canopy Height Model calculation (use process-imagery.R)
   + Process orthomosaic bands to obtain first-order-occurrence measures for textural analysis
   + Caculate vegetation height (CHM)
 * Image classification process (QGIS or similar)
@@ -34,10 +34,19 @@ planning software, as input.
 * Random Forest Classification (classify-imagery.R)
   
 
-# Pre-processing imagery to obtain orthomosaics, DTM, and DSM
+# Pre-processing Imagery to Obtain Orthomosaics, DTM, and DSM
 Pre-processing imagery to orthorectify imagery, produce final orthomosaics, incorporate ground control points, and produce digital terrain and digital surface models can be carried out in a variety of proprietary and open source softwares. An example image should look something like this: 
 
 
-![caption.](images/OS_GreenBand2.png)
+![](images/OS_GreenBand2.png)
+
+# Texture Analysis and Canopy Height Model Calculation
+This step can be done in a variety of paid models, but here we are going to carry out texture analysis and canopy height model calculations in R for a reproducable (and free) workflow. This step can be very slow for larger extents  (modification to loop through parrelell process on the to-do list).
+
+This example raster is a zoomed in view of a single shrub from our image above
+
+![](images/OS_GreenBand2_zoom.png)
+
+
 
 
