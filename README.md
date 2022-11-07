@@ -35,7 +35,7 @@ planning software, as input.
   
 
 # Pre-processing Imagery to Obtain Orthomosaics, DTM, and DSM
-Pre-processing imagery to orthorectify imagery, produce final orthomosaics, incorporate ground control points, and produce digital terrain and digital surface models can be carried out in a variety of proprietary and open source softwares. An example image should look something like this green band which has been extracted from a final mosaic (for ease of display the green band is rendered with a blan to white stretch here...) : 
+Pre-processing imagery to orthorectify imagery, produce final orthomosaics, incorporate ground control points, and produce digital terrain and digital surface models can be carried out in a variety of proprietary and open source softwares. An example image should look something like this green band which has been extracted from a final mosaic (for ease of display the green band is rendered with a blan to white stretch here...): 
 
 
 ![](images/OS_GreenBand2.png)
@@ -45,9 +45,11 @@ Texture analysis is used to generate additional predictor variables beyond red-b
 
 Neighborhood variance, entroy and skewness are computed here. Neighborhood (window) size should be set based on the number of pixels that covers objects of interest. 
 
-This example raster is a zoomed in view of a smaller area from our image above
+This example raster is a zoomed in view of a smaller area from our image above:
 
 ![](images/OS_GreenBand2_clipGit.png)
+
+
 
 
 
