@@ -47,6 +47,8 @@ Neighborhood variance, entropy and skewness are computed here. Neighborhood (win
 
 This example raster is a zoomed in view of a smaller area from the image above:
 
+
 ![](images/OS_GreenBand2_clipGit.png)
 
 # Image Classification with Random Forests
+
