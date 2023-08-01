@@ -41,11 +41,12 @@ Pre-processing imagery to orthorectify imagery, produce final orthomosaics, inco
 ![](images/OS_GreenBand2.png)
 
 # Texture Analysis and Canopy Height Model Calculation
-Texture analysis is used to generate additional predictor variables beyond red-blue-green values obtained from image pixels.  Texture analysis defines a new pixel value based on neighboring rgb values. Neighborhoods with similar values (bare ground for instance) will result in 'smoother' textures than neighborhoods with dissimilar values (shrubs, trees, or other 'rougher' surfaces). This step can be very slow for larger extents  (modification to loop through parrelell process on the to-do list). 
+Texture analysis is used to generate additional predictor variables beyond red-blue-green values obtained from image pixels.  Texture analysis defines a new pixel value based on neighboring rgb values. Neighborhoods with similar values (bare ground for instance) will result in 'smoother' textures than neighborhoods with dissimilar values (shrubs, trees, or other 'rougher' surfaces). This step can be very slow for larger extents  (modification to loop through parallel process on the to-do list). 
 
-Neighborhood variance, entroy and skewness are computed here. Neighborhood (window) size should be set based on the number of pixels that covers objects of interest. 
+Neighborhood variance, entropy and skewness are computed here. Neighborhood (window) size should be set based on the number of pixels that covers objects of interest. In this example a neighborhood of 15 pixels was utilized.  
 
 This example raster is a zoomed in view of a smaller area from the image above:
 
 ![](images/OS_GreenBand2_clipGit.png)
 
+# Image Classification with Random Forests
