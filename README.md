@@ -45,12 +45,7 @@ Texture analysis is used to generate additional predictor variables beyond red-b
 
 Neighborhood variance, entroy and skewness are computed here. Neighborhood (window) size should be set based on the number of pixels that covers objects of interest. 
 
-This example raster is a zoomed in view of a smaller area from our image above:
+This example raster is a zoomed in view of a smaller area from the image above:
 
 ![](images/OS_GreenBand2_clipGit.png)
-
-
-
-
-
 
