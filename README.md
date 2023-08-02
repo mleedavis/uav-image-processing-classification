@@ -77,7 +77,9 @@ This step relies on extracting point data from each of the rasters within define
 ### Extracting training data
 Training data are extracted in post-processing by hand drawing small polygons around 'pure patches' of vegetation that fall within pre-defined functional groups or individual species. 
 
-![Randomly generated points (in a GIS) used to extract training (yellow) and validation (red) data from spatial joins to raster layers. The yellow points in the left center of this image were placed in a hand-drawn polygon that represented a pure patch of 'bare ground' for this example. See below for a detailed image of validation points.](images/OS_trainingValidationPoints.png)
+![](images/OS_trainingValidationPoints.png)
+|:-:|
+|*Randomly generated points (in a GIS) used to extract training (yellow) and validation (red) data from spatial joins to raster layers. The yellow points in the left center of this image were placed in a hand-drawn polygon that represented a pure patch of 'bare ground' for this example. See below for a detailed image of validation points.*|
 
 ### Extracting validation data
 Validation data are extracted using the same method as training data, but randomly generated points are constrained to sample quadrats established during image capture. 
@@ -88,4 +90,4 @@ Validation data are extracted using the same method as training data, but random
 
 
 # Image Classification with Random Forests
-
+This step utilizes the classify-imagery.R script to generate additional variables for differentiating functional groups and plant species in the image classification step outlined below.
