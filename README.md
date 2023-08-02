@@ -82,7 +82,7 @@ Training data are extracted in post-processing by hand drawing small polygons ar
 ### Extracting validation data
 Validation data are extracted using the same method as training data, but randomly generated points are constrained to sample quadrats established during image capture. 
 
-![](OS_trainingValidationPoints2.png)
+![](images/OS_trainingValidationPoints2.png)
 |:-:|
 |*Validation points (red) generated within a 1/4x1/4 meter pvc sample frame placed during field collection and training points (yellow) from post-processing. Black polygons were hand-generated for each source in this example to extract data for 'Rock'.*|
 
