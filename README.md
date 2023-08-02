@@ -74,11 +74,17 @@ Next, resample all raster layers to the clipped othomosaic keeping cell output t
 ## Extracting point values (variables) for model input
 This step relies on extracting point data from each of the rasters within defined polygons (established in this step) and quadrats (established during field work/imagery acquisition). Randomly generated points are generated within polygons and sample quadrats and then are spatially joined to each raster to extract values for training and validating models (please see documents folder for far more detailed instructions). 
 
-### Extracting and preparing training data
-Training data are extraced in post-processing by hand drawing small polygons around 'pure patches' of vegetation that fall within pre-defined functional groups or individual species. 
+### Extracting training data
+Training data are extracted in post-processing by hand drawing small polygons around 'pure patches' of vegetation that fall within pre-defined functional groups or individual species. 
 
 ![Randomly generated points (in a GIS) used to extract training (yellow) and validation (red) data from spatial joins to raster layers. The yellow points in the left center of this image were placed in a hand-drawn polygon that represented a pure patch of 'bare ground' for this example. See below for a detailed image of validation points.](images/OS_trainingValidationPoints.png)
 
+### Extracting validation data
+Validation data are extracted using the same method as training data, but randomly generated points are constrained to sample quadrats established during image capture. 
+
+![](OS_trainingValidationPoints2.png)
+|:-:|
+|*Validation points (red) generated within a 1/4x1/4 meter pvc sample frame placed during field collection and training points (yellow) from post-processing. Black polygons were hand-generated for each source in this example to extract data for 'Rock'.*|
 
 
 # Image Classification with Random Forests
