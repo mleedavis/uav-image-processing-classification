@@ -90,4 +90,12 @@ Validation data are extracted using the same method as training data, but random
 
 
 # Image Classification with Random Forests
-This step utilizes the classify-imagery.R script to generate additional variables for differentiating functional groups and plant species in the image classification step outlined below.
+This step utilizes the classify-imagery.R script predict proportional cover of vegetation types within the project area based on the predictor variables developed in earlier steps. The final product is a classification of the clipped orthoimage (example below) and model related accuracy indices. 
+
+![](images/OS_classifiedMap.png)
+|:-:|
+|*text*|
+
+
+
+
