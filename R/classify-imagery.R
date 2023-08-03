@@ -9,6 +9,7 @@
 library(randomForest)
 library(raster)
 library(here)
+library(caret) #for confusionMatrix()
 
 #Return relative directory
 here()
